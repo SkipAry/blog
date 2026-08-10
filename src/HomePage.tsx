@@ -100,9 +100,11 @@ function HomePage() {
     window.setTimeout(() => setCopyLabel('Copy UPI ID'), 2200)
   }
 
-  const facts = sections.get('the-30-second-version')
+  const whyExists = sections.get('why-this-site-exists')
+  const whatV2V = sections.get('what-v2v-actually-is')
+  const whatProposed = sections.get('what-india-has-just-proposed')
   const series = sections.get('the-series-one-chapter-every-week')
-  const trust = sections.get('why-read-a-blog-by-a-college-student')
+  const trust = sections.get('who-s-writing-this')
   const coffee = sections.get('the-coffee-thing')
   const newsletter = sections.get('get-every-chapter-in-your-inbox')
   const [newsletterCopy = '', closingCopy = ''] = newsletter?.content.replace('[Subscribe →](#subscribe)', '').split(/^---$/m) ?? []
@@ -139,16 +141,30 @@ function HomePage() {
           <figcaption>Connected today, protected tomorrow: every vehicle becomes part of the safety network.</figcaption>
         </figure>
 
-        {facts && (
-          <section className="home-section facts-section" aria-labelledby={facts.slug}>
-            <div className="home-section-heading"><p className="section-index">01</p><h2 id={facts.slug}>{facts.title}</h2></div>
-            <div className="facts-content"><MarkdownBlock>{facts.content}</MarkdownBlock></div>
+        {whyExists && (
+          <section className="home-section facts-section" aria-labelledby={whyExists.slug}>
+            <div className="home-section-heading"><p className="section-index">01</p><h2 id={whyExists.slug}>{whyExists.title}</h2></div>
+            <div className="facts-content"><MarkdownBlock>{whyExists.content}</MarkdownBlock></div>
+          </section>
+        )}
+
+        {whatV2V && (
+          <section className="home-section facts-section" aria-labelledby={whatV2V.slug}>
+            <div className="home-section-heading"><p className="section-index">02</p><h2 id={whatV2V.slug}>{whatV2V.title}</h2></div>
+            <div className="facts-content"><MarkdownBlock>{whatV2V.content}</MarkdownBlock></div>
+          </section>
+        )}
+
+        {whatProposed && (
+          <section className="home-section facts-section" aria-labelledby={whatProposed.slug}>
+            <div className="home-section-heading"><p className="section-index">03</p><h2 id={whatProposed.slug}>{whatProposed.title}</h2></div>
+            <div className="facts-content"><MarkdownBlock>{whatProposed.content}</MarkdownBlock></div>
           </section>
         )}
 
         {series && (
           <section className="home-section series-section" id="series" aria-labelledby={series.slug}>
-            <div className="home-section-heading"><p className="section-index">02</p><h2 id={series.slug}>{series.title}</h2></div>
+            <div className="home-section-heading"><p className="section-index">04</p><h2 id={series.slug}>{series.title}</h2></div>
             <div className="series-list"><MarkdownBlock>{series.content}</MarkdownBlock></div>
           </section>
         )}
@@ -156,13 +172,13 @@ function HomePage() {
         <div className="home-duo">
           {trust && (
             <section className="home-section trust-section" aria-labelledby={trust.slug}>
-              <div className="home-section-heading"><p className="section-index">03</p><h2 id={trust.slug}>{trust.title}</h2></div>
+              <div className="home-section-heading"><p className="section-index">05</p><h2 id={trust.slug}>{trust.title}</h2></div>
               <div className="home-prose"><MarkdownBlock>{trust.content}</MarkdownBlock></div>
             </section>
           )}
           {coffee && (
             <section className="home-section coffee-section" aria-labelledby={coffee.slug}>
-              <div className="home-section-heading"><p className="section-index">04</p><h2 id={coffee.slug}>{coffee.title}</h2></div>
+              <div className="home-section-heading"><p className="section-index">06</p><h2 id={coffee.slug}>{coffee.title}</h2></div>
               <div className="home-prose"><MarkdownBlock>{coffee.content}</MarkdownBlock></div>
               <button className="pill" type="button" onClick={copyUpi} aria-live="polite">{copyLabel}</button>
             </section>
