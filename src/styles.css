@@ -628,8 +628,9 @@ a:hover { text-decoration: underline; }
   .topbar, .home-topbar, .article-topbar { height: 56px; }
   .nav-wrap, .home-nav, .article-nav, .home-hero, .home-section, .home-duo, .home-newsletter, .home-closing, .article-header, .article-hero-image, .subscribe-panel, .chapter-nav, .about-header, .about-hero-image, .about-contact, .about-signoff { width: min(100% - 32px, 1200px); }
   
-  .nav-links > :not(.pill), .home-nav > div > a:not(.pill), .article-nav-actions > a { display: none; }
-  .nav-links, .home-nav > div { gap: 0; }
+  .nav-links, .home-nav > div, .article-nav-actions { gap: 12px; font-size: 0.8125rem; }
+  .wordmark { font-size: 1.125rem; }
+  .pill-small, .home-nav .pill, .article-nav-actions .pill { padding: 6px 12px; min-height: 32px; font-size: 0.75rem; }
   
   .home-hero { padding: 36px 0 32px; gap: 24px; }
   .home-hero h1, .article-header h1, .about-header h1 { font-size: clamp(1.875rem, 7.5vw, 2.25rem); line-height: 1.08; letter-spacing: -0.03em; }
