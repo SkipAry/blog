@@ -20,7 +20,7 @@ Let me tell you about the worst intersection in my city.
 
 You know the one. Every city has one. Two roads meet, a building sits exactly where your eyeballs need to see through, and every day hundreds of drivers play a fun little game called *"I hope nobody's coming."* I've crossed it a hundred times on my friend's Activa, and every single time, one of us does the lean-forward-squint move. You know the move. The human sonar.
 
-Last month, two cars met there at the exact wrong second. Nobody died — thankfully — but I watched it happen, and I couldn't stop thinking about one thing:
+Last month, two cars met there at the exact wrong second. Nobody died (thankfully), but I watched it happen, and I couldn't stop thinking about one thing:
 
 **Neither of them had any way of knowing. Zero. Until they did.**
 
@@ -30,7 +30,7 @@ That night I fell down a rabbit hole. And at the bottom of it, I found a governm
 
 **502.**
 
-That's how many people died on Indian roads *today*. And yesterday. And tomorrow, unless something changes [[1]](https://timesofindia.indiatimes.com/india/road-crashes-killed-a-record-1-8-lakh-in-2025-502-people-daily/articleshow/132593911.cms). Every single day in 2025 — 502 people left home and just... never came back.
+That's how many people died on Indian roads *today*. And yesterday. And tomorrow, unless something changes [[1]](https://timesofindia.indiatimes.com/india/road-crashes-killed-a-record-1-8-lakh-in-2025-502-people-daily/articleshow/132593911.cms). Every single day in 2025: 502 people left home and just... never came back.
 
 The yearly total? **1,83,382** [[2]](https://www.hindustantimes.com/india-news/road-crash-deaths-rose-by-3-5-to-183-382-in-2025-government-tells-lok-sabha-1017848720391.html). I tried to visualise this and it broke my brain a little. That's a full stadium. Gone. Every year. It's the highest number India has ever recorded, and before that, 2024 was the highest ever recorded (1,77,175) [[3]](https://www.hindustantimes.com/india-news/road-accident-deaths-increased-2-5-in-2024-from-2023-morth-report-101781204793385.html). We keep breaking our own record in the worst category imaginable.
 
@@ -40,7 +40,7 @@ And here's the part that genuinely made me close my laptop and stare at the wall
 
 That's us. That's literally us. People with exam stress and situationships and "bhai, petrol bharwa de, UPI kar dunga." The generation that's supposed to be India's big demographic advantage is getting wiped out one scooter ride at a time.
 
-Because yeah — it's mostly two-wheelers. India has **24 crore of them**, the most on the planet [[4]](https://www.linkedin.com/posts/raj-shah-entrepreneur_automotiveindustry-india-tech-activity-7417056653897900032-aJYV), and riding one makes you 30–40 times more likely to die per kilometre than sitting in a car [[4]](https://www.linkedin.com/posts/raj-shah-entrepreneur_automotiveindustry-india-tech-activity-7417056653897900032-aJYV). Thirty to forty times. My mom was right about the Activa all along, and I hate that.
+Because yeah - it's mostly two-wheelers. India has **24 crore of them**, the most on the planet [[4]](https://www.linkedin.com/posts/raj-shah-entrepreneur_automotiveindustry-india-tech-activity-7417056653897900032-aJYV), and riding one makes you 30-40 times more likely to die per kilometre than sitting in a car [[4]](https://www.linkedin.com/posts/raj-shah-entrepreneur_automotiveindustry-india-tech-activity-7417056653897900032-aJYV). Thirty to forty times. My mom was right about the Activa all along, and I hate that.
 
 <!-- refer b2.png image here
 -->
