@@ -80,9 +80,9 @@ const imageDetails: Record<string, { alt: string; caption: string }> = {
 function prepareChapter(source: string, chapter: string) {
   let prepared = source
     .replace(sourcePattern, '')
-    .replace(/^\s*# .+\r?\n+/, '')
+    .replace(/<!--[^]*?-->/g, '')
+    .replace(/^\s*#\s+.*$/m, '')
     .replace(/^\*\*By a college student who fell down a rabbit hole\*\*\s*/m, '')
-    .replace(/<!-- refer b(?:1|6)\.png[^]*?-->/, '')
     .replace(/```\s*$/, '')
 
   if (chapter === '1') {
