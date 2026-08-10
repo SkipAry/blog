@@ -702,45 +702,45 @@ a:hover { text-decoration: underline; }
   .wordmark { font-size: 18px; flex-shrink: 0; }
   .pill-small, .home-nav .pill, .article-nav-actions .pill { padding: 6px 12px; min-height: 36px; font-size: 12px; flex-shrink: 0; }
   
-  .home-hero, .hero { padding: 44px 0 32px; gap: 28px; }
-  .home-hero h1, .hero h1 { margin-top: 12px; font-size: clamp(38px, 12vw, 60px); line-height: 0.9; letter-spacing: -0.045em; }
-  .home-hero-intro, .hero-subtitle { margin-top: 18px; font-size: 15px; }
-  .home-hero-intro p:first-child, .home-hero-intro p:nth-child(2) { font-size: 15px; line-height: 1.45; }
+  .home-hero, .hero { padding: 44px 0 32px; gap: 28px; text-align: left; }
+  .home-hero h1, .hero h1 { margin-top: 12px; font-size: clamp(36px, 11vw, 54px); line-height: 0.88; letter-spacing: -0.045em; text-align: left; }
+  .home-hero-intro, .hero-subtitle { margin-top: 18px; font-size: 16px; line-height: 1.45; text-align: left; }
+  .home-hero-intro p:first-child, .home-hero-intro p:nth-child(2) { font-size: 16px; line-height: 1.45; }
   
   .home-hero-image, .article-hero-image, .about-hero-image { width: 100%; margin-bottom: 48px; }
   
-  .home-section { padding-top: 24px; padding-bottom: 48px; }
-  .home-section-heading, .home-duo .home-section-heading { grid-template-columns: 1fr; gap: 8px; }
-  .section-index { margin-top: 0; }
-  .home-section-heading h2, .home-newsletter h2, .subscribe-panel h2, .about-contact h2 { font-size: 32px; line-height: 1.02; }
+  .home-section { padding-top: 24px; padding-bottom: 48px; text-align: left; }
+  .home-section-heading, .home-duo .home-section-heading { grid-template-columns: 1fr; gap: 8px; text-align: left; }
+  .section-index { margin-top: 0; font-size: 12px; text-align: left; }
+  .home-section-heading h2, .home-newsletter h2, .subscribe-panel h2, .about-contact h2 { font-size: 28px; line-height: 1.0; letter-spacing: -0.035em; text-align: left; }
   
-  .facts-content, .series-list, .home-prose { margin: 28px 0 0; }
-  .facts-content { font-size: 16px; line-height: 1.5; }
+  .facts-content, .series-list, .home-prose { margin: 24px 0 0; text-align: left; }
+  .facts-content { font-size: 15px; line-height: 1.5; }
   .facts-content p, .facts-content ul, .home-prose p, .home-prose ul { max-width: 100%; }
   
   .series-list { grid-template-columns: 1fr; }
-  .series-list p { min-height: 0; padding-bottom: 24px; font-size: 13px; }
-  .series-list p > strong:first-child { font-size: 20px; }
+  .series-list p { min-height: 0; padding-bottom: 24px; font-size: 13px; text-align: left; }
+  .series-list p > strong:first-child { font-size: 18px; text-align: left; }
   
-  .home-duo .home-section { padding: 20px 0 48px; }
+  .home-duo .home-section { padding: 20px 0 48px; text-align: left; }
   .home-duo .home-section + .home-section { padding-top: 20px; }
-  .home-prose { margin: 20px 0 0; font-size: 15px; }
+  .home-prose { margin: 20px 0 0; font-size: 15px; text-align: left; }
   .coffee-section > .pill { width: 100%; margin: 8px 0 0; }
   
-  .home-newsletter, .subscribe-panel { padding: 48px 0; grid-template-columns: 1fr; align-items: start; gap: 28px; }
+  .home-newsletter, .subscribe-panel { padding: 48px 0; grid-template-columns: 1fr; align-items: start; gap: 28px; text-align: left; }
   .home-newsletter form, .subscribe-panel form > div { grid-template-columns: 1fr; flex-direction: column; }
-  .home-newsletter label, .home-newsletter form small { grid-column: auto; }
+  .home-newsletter label, .home-newsletter form small { grid-column: auto; text-align: left; }
   .home-newsletter .pill, .subscribe-panel .pill { width: 100%; }
   
-  .home-closing { padding: 36px 0 48px; grid-template-columns: 1fr; align-items: start; gap: 24px; }
+  .home-closing { padding: 36px 0 48px; grid-template-columns: 1fr; align-items: start; gap: 24px; text-align: left; }
   .home-closing nav { flex-wrap: wrap; gap: 14px; }
   
-  .article-header, .about-header { padding: 48px 0 36px; text-align: left; }
-  .article-header h1, .about-header h1 { font-size: 36px; line-height: 1.05; }
-  .article-deck, .about-header > p:last-child { margin-top: 20px; font-size: 16px; }
-  .article-body { width: 100%; font-size: 16px; line-height: 1.5; }
-  .article-body blockquote { padding-left: 20px; font-size: 20px; }
-  .chapter-nav { padding-bottom: 44px; flex-direction: column; gap: 18px; }
+  .article-header, .about-header { padding: 44px 0 32px; text-align: left; }
+  .article-header h1, .about-header h1 { font-size: 32px; line-height: 1.05; letter-spacing: -0.03em; text-align: left; }
+  .article-deck, .about-header > p:last-child { margin-top: 18px; font-size: 16px; text-align: left; }
+  .article-body { width: 100%; font-size: 15px; line-height: 1.5; text-align: left; }
+  .article-body blockquote { padding-left: 20px; font-size: 20px; text-align: left; }
+  .chapter-nav { padding-bottom: 44px; flex-direction: column; gap: 18px; text-align: left; }
 }
 
 @media (prefers-reduced-motion: reduce) {
