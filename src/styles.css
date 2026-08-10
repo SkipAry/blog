@@ -148,25 +148,29 @@ a:hover { text-decoration: underline; }
 
 .text-button {
   min-height: 44px;
+  min-width: 44px;
   border: 0;
   padding: 0;
   background: transparent;
   cursor: pointer;
   color: var(--ink);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .text-button:hover { text-decoration: underline; text-underline-offset: 4px; }
 
-/* Pill Button (Filled) - Signature #191919 background, 9999px radius */
+/* Pill Button (Filled) - Signature #191919 background, 9999px radius, 44px min touch target */
 .pill {
   width: fit-content;
-  min-height: 40px;
+  min-height: 44px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   border: 0;
   border-radius: var(--radius-buttons);
-  padding: 8px 20px;
+  padding: 10px 22px;
   background: var(--button);
   color: white;
   font-family: var(--font-sohne);
@@ -174,13 +178,13 @@ a:hover { text-decoration: underline; }
   font-weight: 400;
   line-height: 1;
   cursor: pointer;
-  transition: background-color 160ms ease, transform 160ms ease;
+  transition: background-color 160ms ease, transform 160ms ease, opacity 160ms ease;
 }
 
 .pill:hover { background: var(--body); color: white; transform: translateY(-1px); }
-.pill:active { transform: translateY(0); }
-.pill-small { padding: 8px 16px; min-height: 36px; font-size: 13px; }
-.mobile-cta { display: none; padding: 8px 16px; }
+.pill:active { transform: translateY(0); opacity: 0.9; }
+.pill-small { padding: 8px 18px; min-height: 40px; font-size: 13px; }
+.mobile-cta { display: none; padding: 10px 18px; }
 
 /* Kickers & Section Index */
 .article-kicker, .section-label {
@@ -672,19 +676,36 @@ a:hover { text-decoration: underline; }
 }
 
 @media (max-width: 680px) {
-  .topbar, .home-topbar, .article-topbar { height: 60px; }
+  .topbar, .home-topbar, .article-topbar { height: 56px; }
   .nav-wrap, .home-nav, .article-nav, .home-hero, .home-section, .home-duo, .home-newsletter, .home-closing, .article-header, .article-hero-image, .subscribe-panel, .chapter-nav, .about-header, .about-hero-image, .about-contact, .about-signoff {
-    width: min(100% - 40px, 1200px);
+    width: min(100% - 32px, 1200px);
   }
   
-  .nav-links, .home-nav > div, .article-nav-actions { gap: 16px; font-size: 13px; }
-  .wordmark { font-size: 20px; }
-  .pill-small, .home-nav .pill, .article-nav-actions .pill { padding: 8px 14px; min-height: 34px; font-size: 13px; }
+  .nav-wrap, .home-nav, .article-nav {
+    gap: 12px;
+  }
   
-  .home-hero, .hero { padding: 54px 0 36px; gap: 32px; }
-  .home-hero h1, .hero h1 { margin-top: 14px; font-size: clamp(42px, 13vw, 64px); line-height: 0.9; letter-spacing: -0.045em; }
-  .home-hero-intro, .hero-subtitle { margin-top: 20px; font-size: 16px; }
-  .home-hero-intro p:first-child, .home-hero-intro p:nth-child(2) { font-size: 16px; line-height: 1.45; }
+  .nav-links, .home-nav > div, .article-nav-actions {
+    gap: 10px;
+    font-size: 13px;
+    max-width: calc(100% - 80px);
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .nav-links::-webkit-scrollbar, .home-nav > div::-webkit-scrollbar, .article-nav-actions::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .wordmark { font-size: 18px; flex-shrink: 0; }
+  .pill-small, .home-nav .pill, .article-nav-actions .pill { padding: 6px 12px; min-height: 36px; font-size: 12px; flex-shrink: 0; }
+  
+  .home-hero, .hero { padding: 44px 0 32px; gap: 28px; }
+  .home-hero h1, .hero h1 { margin-top: 12px; font-size: clamp(38px, 12vw, 60px); line-height: 0.9; letter-spacing: -0.045em; }
+  .home-hero-intro, .hero-subtitle { margin-top: 18px; font-size: 15px; }
+  .home-hero-intro p:first-child, .home-hero-intro p:nth-child(2) { font-size: 15px; line-height: 1.45; }
   
   .home-hero-image, .article-hero-image, .about-hero-image { width: 100%; margin-bottom: 48px; }
   
