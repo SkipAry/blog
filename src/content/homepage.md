@@ -62,8 +62,6 @@ If the notification is finalised in its current form, India becomes one of the f
 
 ## The Series (One Chapter, Every Week)
 
-Kavach breaks the transition down into chapters written like stories, not standards:
-
 **Chapter 1 — [The 502 Problem](/chapter-1/)** — `Live`
 Why we're here — India's road‑crash numbers, who is dying, and why existing safety tech isn't enough.
 

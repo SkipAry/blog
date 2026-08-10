@@ -46,8 +46,6 @@ If the notification is finalised in its current form, India becomes one of the f
 
 Most people will only ever see this in a line on a spec sheet: *“V2V communication (AIS‑230, C‑V2X)”*. That’s not helpful.
 
-Kavach breaks the transition down into chapters written like stories, not standards:
-
 - **Chapter 1 – The 502 Problem**: Why we’re here — India’s road‑crash numbers, who is dying, and why existing safety tech isn’t enough.[web:72][web:173][web:178]
 - **Chapter 2 – How Your Car Gossips**: A chai‑table explanation of Basic Safety Messages, radios and how cars quietly warn each other.[web:78][web:140][web:141]
 - **Chapter 3 – Seven Times Your Car Will Save Your Life**: Story‑driven crash scenarios V2V is designed to prevent — sudden braking, blind intersections, wrong‑way drivers, scooters in blind spots, emergency vehicles, curve hazards.[web:78][web:16][web:162]
