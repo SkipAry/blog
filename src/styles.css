@@ -183,7 +183,7 @@ a:hover { text-decoration: underline; }
 
 .pill:hover { background: var(--body); color: white; transform: translateY(-1px); }
 .pill:active { transform: translateY(0); opacity: 0.9; }
-.pill-small { padding: 8px 18px; min-height: 40px; font-size: 13px; }
+.pill-small { padding: 8px 18px; min-height: 44px; font-size: 13px; }
 .mobile-cta { display: none; padding: 10px 18px; }
 
 /* Kickers & Section Index */
