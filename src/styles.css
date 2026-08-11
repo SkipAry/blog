@@ -727,7 +727,7 @@ a:hover { text-decoration: underline; }
 
 @media (max-width: 680px) {
   .topbar, .home-topbar, .article-topbar { height: 56px; }
-  .nav-wrap, .home-nav, .article-nav, .home-hero, .home-section, .home-duo, .home-newsletter, .home-closing, .article-header, .article-hero-image, .subscribe-panel, .chapter-nav, .about-header, .about-hero-image, .about-contact, .about-signoff {
+  .nav-wrap, .home-nav, .article-nav, .home-hero, .home-section, .home-duo, .home-newsletter, .home-closing, .article-header, .article-hero-image, .subscribe-panel, .chapter-nav, .about-header, .about-hero-image, .about-contact, .about-signoff, .article-body {
     width: min(100% - 32px, 1200px);
   }
   
@@ -785,34 +785,58 @@ a:hover { text-decoration: underline; }
   .home-closing { padding: 36px 0 48px; grid-template-columns: 1fr; align-items: center; gap: 24px; text-align: center; }
   .home-closing nav { flex-wrap: wrap; gap: 14px; justify-content: center; }
   
-  .article-header, .about-header { padding: 36px 0 24px; text-align: center; }
-  .article-header h1, .about-header h1 { font-size: 28px; line-height: 1.12; letter-spacing: -0.025em; text-align: center; }
+  .article-header, .about-header { padding: 36px 0 24px; text-align: left; }
+  .article-header h1, .about-header h1 { font-size: 28px; line-height: 1.12; letter-spacing: -0.025em; text-align: left; }
   .article-deck, .about-header > p:last-child { margin-top: 16px; font-size: 16px; line-height: 1.55; text-align: left; text-justify: none; hyphens: none; -webkit-hyphens: none; }
   
-  .byline { margin: 20px auto 0; gap: 10px; justify-content: center; }
+  .byline { margin: 20px 0 0; gap: 10px; justify-content: flex-start; }
   .author-mark { width: 36px; height: 36px; font-size: 11px; }
   .byline strong { font-size: 13px; }
   .byline span { font-size: 12px; }
 
-  .article-body { width: 100%; font-size: 16px; line-height: 1.6; text-align: left; text-justify: none; hyphens: none; -webkit-hyphens: none; }
-  .article-body p { margin: 0 0 1.4em; text-align: left; text-justify: none; hyphens: none; -webkit-hyphens: none; word-spacing: normal; }
-  
-  /* Disable broken drop-cap float on mobile for clean text flow */
-  .article-body > p:first-child::first-letter {
-    float: none;
-    font-size: inherit;
-    line-height: inherit;
-    margin: 0;
-    font-family: inherit;
+  .article-body {
+    width: min(100% - 32px, 1200px);
+    margin: 0 auto;
+    font-family: var(--font-sohne) !important;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--body);
+    text-align: left;
+    text-justify: none;
+    hyphens: none;
+    -webkit-hyphens: none;
   }
   
-  /* Center Section Headings & Dividers on mobile to match Homepage layout */
+  .article-body p {
+    margin: 0 0 1.5em;
+    font-family: var(--font-sohne) !important;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--body);
+    text-align: left;
+    text-justify: none;
+    hyphens: none;
+    -webkit-hyphens: none;
+    word-spacing: normal;
+  }
+  
+  /* Completely reset drop-cap pseudoelement on mobile for clean start */
+  .article-body > p:first-child::first-letter {
+    float: none !important;
+    font-size: inherit !important;
+    line-height: inherit !important;
+    margin: 0 !important;
+    color: inherit !important;
+    font-family: inherit !important;
+  }
+  
   .article-body h2 {
+    font-family: var(--font-gt-super);
     font-size: 24px;
     line-height: 1.18;
-    margin: 2.2em auto 0.6em;
+    margin: 2em 0 0.6em;
     letter-spacing: -0.025em;
-    text-align: center;
+    text-align: left;
     color: var(--ink);
   }
 
@@ -836,7 +860,7 @@ a:hover { text-decoration: underline; }
   }
   
   .article-body ul, .article-body ol {
-    margin: 0 0 1.4em;
+    margin: 0 0 1.5em;
     padding-left: 1.3em;
     font-size: 16px;
     line-height: 1.6;
@@ -846,7 +870,7 @@ a:hover { text-decoration: underline; }
   .article-body li { margin-bottom: 0.5em; }
   
   .story-figure { margin: 24px 0 32px; }
-  .story-figure figcaption { margin-top: 10px; font-size: 13px; line-height: 1.4; text-align: center; color: var(--muted); }
+  .story-figure figcaption { margin-top: 10px; font-size: 13px; line-height: 1.4; text-align: left; color: var(--muted); }
   
   .chapter-nav {
     padding: 36px 0 60px;
