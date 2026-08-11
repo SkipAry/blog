@@ -785,11 +785,11 @@ a:hover { text-decoration: underline; }
   .home-closing { padding: 36px 0 48px; grid-template-columns: 1fr; align-items: center; gap: 24px; text-align: center; }
   .home-closing nav { flex-wrap: wrap; gap: 14px; justify-content: center; }
   
-  .article-header, .about-header { padding: 36px 0 24px; text-align: left; }
-  .article-header h1, .about-header h1 { font-size: 28px; line-height: 1.12; letter-spacing: -0.025em; text-align: left; }
+  .article-header, .about-header { padding: 36px 0 24px; text-align: center; }
+  .article-header h1, .about-header h1 { font-size: 28px; line-height: 1.12; letter-spacing: -0.025em; text-align: center; }
   .article-deck, .about-header > p:last-child { margin-top: 16px; font-size: 16px; line-height: 1.55; text-align: left; text-justify: none; hyphens: none; -webkit-hyphens: none; }
   
-  .byline { margin: 20px 0 0; gap: 10px; justify-content: flex-start; }
+  .byline { margin: 20px auto 0; gap: 10px; justify-content: center; }
   .author-mark { width: 36px; height: 36px; font-size: 11px; }
   .byline strong { font-size: 13px; }
   .byline span { font-size: 12px; }
@@ -830,13 +830,14 @@ a:hover { text-decoration: underline; }
     font-family: inherit !important;
   }
   
+  /* Center article section headlines (h2) on mobile */
   .article-body h2 {
     font-family: var(--font-gt-super);
     font-size: 24px;
     line-height: 1.18;
-    margin: 2em 0 0.6em;
+    margin: 2.2em auto 0.6em;
     letter-spacing: -0.025em;
-    text-align: left;
+    text-align: center;
     color: var(--ink);
   }
 
